@@ -15,5 +15,8 @@
     "bootstrap": "~3.3.2",
     "jquery-ui": "~1.11.3",
     "jqui-datepicker": "~0.1.3"
+  },
+  "resolutions" : {
+    "ember": "1.10.0"
   }
 }
