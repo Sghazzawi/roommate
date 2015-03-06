@@ -1,0 +1,13 @@
+<div class="row">
+  {{#each bill in content itemController="bills/BillItemController"}}
+    <div class="list-group-separator"></div>
+    <div class="list-group-item col-xs-12">
+      {{#link-to "bills.edit" bill}}
+        <div class="row-content">
+          <span class="col-sm-6 col-xs-6 list-group-item-heading">{{bill.description}}</span>
+          <span class="col-sm-6 col-xs-6 pull-right"> {{bill.myShare}}</span>
+        </div>
+      {{/link-to}}
+    </div>
+  {{/each}}
+</div>

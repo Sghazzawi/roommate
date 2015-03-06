@@ -1,0 +1,10 @@
+{{#with content as bill}}
+  <div class="page-header">
+    <h1>{{bill.description}}</h1>
+  </div>
+  <h2>{{bill.total}}</h2>
+  {{#each split in bill.split}}
+    <div class="col-xs-7">{{split.assignedTo.displayName}}</div>
+    <div class="col-xs-4">{{split.total}}</div>
+  {{/each}}
+{{/with}}

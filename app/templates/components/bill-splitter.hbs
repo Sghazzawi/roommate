@@ -1,0 +1,18 @@
+<div {{bind-attr class=":row showSplit::isHidden"}}>
+  {{#each split in splits}}
+    <h3> {{split.total}}</h3>
+  {{/each}}
+  {{view Ember.Select
+    content = roomMates
+    classNames = "col-xs-7"
+    optionValuePath = "content.id"
+    optionLabelPath = "content.displayName"
+    value = splitSelectedUserId
+  }}
+  <div class="col-xs-4">
+    {{input type="number" min="0" max="9999" step="0.01" size="4" value=splitSelectedAmount}}
+  </div>
+  <button class="btn btn-default btn-xs" {{action "addSplit"}}>
+    <span class="glyphicon glyphicon-plus"></span>
+  </button>
+</div>

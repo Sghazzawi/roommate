@@ -1,3 +1,29 @@
 html, body {
   margin: 20px;
 }
+
+#create-bill .row {
+  margin-bottom: 12px;
+}
+
+#top-row {
+  padding: 0px;
+}
+
+.isHidden {
+  display: none;
+}
+
+.list-group .list-group-separator:before {
+  width: 100%;
+}
+
+.pull-right {
+  float: right;
+}
+
+@media (max-width:767px){
+  .list-group .list-group-item .row-content {
+    min-height: 30px;
+  }
+}

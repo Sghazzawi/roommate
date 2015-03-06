@@ -17,4 +17,14 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
+app.import('bower_components/bootstrap/dist/css/bootstrap.min.css');
+//app.import('bower_components/bootstrap-material-design/scripts/material.js');
+//app.import('bower_components/bootstrap-material-design/scripts/ripples.js');
+//app.import('bower_components/bootstrap-material-design/css-compiled/material.min.css');
+app.import('bower_components/jquery-ui/ui/jquery.ui.core.js');
+app.import('bower_components/jquery-ui/ui/jquery.ui.datepicker.js');
+app.import('bower_components/jquery-ui/themes/smoothness/jquery-ui.css');
+app.import('bower_components/jquery-ui/themes/smoothness/jquery.ui.theme.css');
+app.import('bower_components/jqui-datepicker/dist/main.js');
 module.exports = app.toTree();
