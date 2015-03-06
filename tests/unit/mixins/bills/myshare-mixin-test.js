@@ -1,11 +1,12 @@
 import Ember from 'ember';
-import BillsMyshareMixinMixin from 'roommate/mixins/bills/myshare-mixin';
+import BillsMyshareMixinMixin from '../../../../mixins/bills/myshare-mixin';
+import { module, test } from 'qunit';
 
 module('BillsMyshareMixinMixin');
 
 // Replace this with your real tests.
-test('it works', function() {
+test('it works', function(assert) {
   var BillsMyshareMixinObject = Ember.Object.extend(BillsMyshareMixinMixin);
   var subject = BillsMyshareMixinObject.create();
-  ok(subject);
+  assert.ok(subject);
 });
