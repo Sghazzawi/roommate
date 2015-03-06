@@ -17,6 +17,7 @@
     "jqui-datepicker": "~0.1.3"
   },
   "resolutions" : {
-    "ember": "1.10.0"
+    "ember": "1.10.0",
+    "jquery-ui": "~1.11.3"
   }
 }
